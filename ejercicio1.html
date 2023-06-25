@@ -1,0 +1,70 @@
+<!--
+    Javascript
+    Realizando cálculos con variables, desarrolla el código necesario para hacer las
+    siguentes operaciones.
+
+    1. Si en el mercado tenemos que 12 manzanas nos cuestan 3 euros,
+    ¿Cuánto nos mostrarían 17 manzanas?
+
+    2. Si tengo 37 euros ¿Cuántas manzanas me puedo comprar?.
+
+    3. Cual es el precio de una manzana.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Javascript</title>
+    <script type="text/javascript">
+
+        /* 1 */
+
+        // Numero de manzanas
+        var numManzanas = 12;
+
+        // Precio total 12 manzanas
+        var precioManzanas = 3;
+
+        // Precio de 17 manzanas
+        var precio17Manzanas = precioManzanas * 17 / numManzanas;
+
+        document.write("El precio de 17 manzanas es " + precio17Manzanas + "€." + " <br/> "); // Utilizando la etiqueta <br/> genero un salto de linea 
+
+
+        /* 2 */
+       
+        /*
+        
+        12 -- 3
+        x  -- 37
+
+        */
+
+        // Numero de manzanas por 37 €uros
+        var manzanasPor37Euros = (numManzanas * 37) / precioManzanas;
+
+        document.write("El número de manzanas que nos dan con 37€ es : " + manzanasPor37Euros + " manzanas. <br/>");
+
+        /* 3 */
+
+        /*
+        
+        12 -- 3
+        1  -- x
+
+        */
+
+        // Precio de una unidad 
+        var precioUnidadManzana = precioManzanas / numManzanas;
+
+        document.write("El precio de una unidad de manzanas es: " + precioUnidadManzana + "€.")
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
