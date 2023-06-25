@@ -1,0 +1,32 @@
+<!--
+    Hacer un programa que pida un número al usuario y indicar si ese número es par o impar.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <!--Creo el scrip en JavaScript directamente sobre el documento HTML-->
+    <script type="text/javascript">
+
+        // Solicito un valor al usuario utilizando el metodo prompt
+        let numeroUsuario = prompt("Introduce un número:");
+
+        // Utilizando un condicional if compruebo si el numero es par o impar
+        if (numeroUsuario % 2 === 0) { // Si el valor introducido por el usuario modulo 2 es igual a 0
+            alert("El número " + numeroUsuario + " es par.") // Utilizando el metodo alert muestro un cuadro de dialogo al usuario 
+        } else { // Si no
+            alert("El número " + numeroUsuario + " es impar.")
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
