@@ -1,0 +1,55 @@
+<!--
+    Crea un script que pida al usuario dos números y una operación (que puede ser el carácter +, -, * o /).
+    El script debe devolver el resultado de la operación seleccionada por el usuario.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+
+    <script type="text/javascript">
+        // Pido y guardo los valores
+        let valor1 = prompt("Introduce el primer valor:");
+
+        let valor2 = prompt("Introduce el segundo valor:");
+
+        // Informo de las operaciones que se pueden realizar y guardo la opcion escogida
+        let operacion = prompt("Entre estas operaciones introduce el simbolo correspondiente SUMA[+] RESTA[-] DIVISIÓN[/] MULTIPLICACIÓN[*] MÓDULO[%]");
+
+        // Dentro de una estructura de seleccion controlo los diferentes casos
+        switch (operacion) {
+            case "+":
+                console.log(valor1 * valor2); // Imprimo por consola el resultado
+                break;
+
+            case "-":
+                console.log(valor1 - valor2);
+                break;
+
+            case "/":
+                console.log(valor1 / valor2);
+                break;
+
+            case "*":
+                console.log(valor1 * valor2);
+                break;
+
+            case "%":
+                console.log(valor1 % valor2);
+                break;
+
+            default: // Controlo si el usuario no escoge ninguna opcion correcta
+                alert("La operación no se pudo realizar.");
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
