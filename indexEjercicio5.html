@@ -1,0 +1,81 @@
+<!--
+    Crea un script que pregunte al usuario por el nombre de un mes, y muestre el número de días que
+    tiene el mes.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+
+    <!-- Creo un script en javascript directamente dentro del documento HTML-->
+    <script type="text/javascript">
+
+        // Creo una variable donde guardare el valor introducido por el usuario
+        // Utilizando el metodo prompt muestro el mensaje al usuario por un cuadro de dialogo y guardo el valor que introduzca
+        let mesUsuario = prompt("Introduce el mes para saber el número de días que contiene.");
+
+        // Utilizando una estructura de control switch case manejo cada caso
+        switch(mesUsuario.toLowerCase()){ // Utilizando el metodo toLowerCase() convierto el valor introducido a minusculas
+            case "enero":
+                console.log("Enero tiene 31 días.");
+                break;
+            
+            case "febrero":
+                console.log("Febrero tiene 29 días");
+                break;
+
+            case "marzo":
+                console.log("Marzo tiene 31 días");
+                break;
+
+            case "abril":
+                console.log("Abril tiene 30 días");
+                break;
+
+            case "mayo":
+                console.log("Mayo tiene 31 días");
+                break;
+
+            case "junio":
+                console.log("Junio tiene 30 días");
+                break;
+
+            case "julio":
+                console.log("Julio tiene 31 días");
+                break;
+             
+            case "agosto":
+                console.log("Agosto tiene 31 días");
+                break;
+
+            case "septiembre":
+                console.log("Septiembre tiene 30 días");
+                break;
+
+            case "octubre":
+                console.log("Octubre tiene 31 días");
+                break;
+
+            case "noviembre":
+                console.log("Noviembre tiene 30 días");
+                break;
+
+            case "diciembre":
+                console.log("Diciembre tiene 31 días");
+                break;
+
+            default :
+                console.log("El mes introducido no existe!!!");
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
