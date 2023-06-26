@@ -1,0 +1,46 @@
+<!--
+    Realiza un pequeño adivinador, de manera que primero le pida al usuario un
+    número, y después el usuario (aunque se entienda que sea otro) deberá
+    adivinarlo. El programa dé pequeñas pistas al usuario que adivina
+    (indicando si el número buscado es más pequeño o más mayor que el
+    introducido).
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+
+    <script type="text/javascript">
+
+        let numUsuario = prompt("Adivina el número en el que estoy pensando del 1 al 10.");
+
+        const numeroSalida = 3;
+
+        while(numUsuario != numeroSalida) {
+
+            if (numUsuario > numeroSalida) {
+                alert("Te has pasado!!!");
+
+                numUsuario = prompt("Adivina el número en el que estoy pensando del 1 al 10.");
+
+            } else {
+                alert("Te has quedado corto!!!");
+
+                numUsuario = prompt("Adivina el número en el que estoy pensando del 1 al 10.");
+            }
+
+        }
+
+        document.write("Bien, has adivinado el número!!!");
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
