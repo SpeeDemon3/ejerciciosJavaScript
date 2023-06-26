@@ -1,0 +1,49 @@
+<!--
+    Hacer un script en el que el usuario si introduce ( C3PO, R2, Vader, Yoda ) nos responda dicien-
+    do que son personajes de Star Wars y si introduce cualquier otro nos responda que no son perso-
+    najes de la pelicula.
+    (Los datos podrán ser introduccidos tanto en minúsculas como en mayúsculas)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+
+    <script type="text/javascript">
+
+        let personajeUsuario = prompt("Introduce tu personaje favorito de las películas de Stars Wars");
+
+        switch(personajeUsuario.toLowerCase()) {
+
+            case "c3p0":
+                alert("Se trata de un androide, diseñado para llevar a cabo tareas de etiqueta y protocolo al servicio de los humanos, "
+                    + "para lo que domina seis millones de formas de comunicación.")
+                break;
+
+            case "r2":
+                alert("Es un droide astromecánico, contraparte y amigo de C-3PO.");
+                break;
+
+            case "vader":
+                alert(" La saga se centra en su conocimiento de la Fuerza, su caída al lado Oscuro y, finalmente, su redención y muerte.");
+                break;
+
+            case "yoda":
+                alert("Era uno de los más renombrados y poderosos maestros Jedi durante toda la historia de la Galaxia, " 
+                + "y uno de los pocos Jedis de la República Galáctica en sobrevivir hasta la Guerra Civil Galáctica.");
+                break;
+
+            default:
+                alert(personajeUsuario + " no es un personaje de la película.");
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
