@@ -1,0 +1,36 @@
+<!--
+    Hacer un script donde el sistema nos pregunte un usuario y una contraseña y solo deje acce-
+    der al usuario: alumno con la clave clase. Si el usuario NO es correcto, debe indicarnos que no es
+    correcto. Si es correcto nos mandara a la pagina inicial de google.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+
+    <script type="text/javascript">
+
+
+        let usuario = prompt("Introduce el nombre de usuario");
+
+        let password = prompt("Introduce la contraseña");
+
+        if (usuario == "alumno" && password == "clase") {
+            // window.open(direccion) abrira una nueva ventana del navegador y nos llevara hasta el sitio web indicado
+            window.open("http://www.google.es");
+        } else {
+            alert("Usuario incorrecto.");
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
