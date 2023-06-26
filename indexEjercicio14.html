@@ -1,0 +1,41 @@
+<!--
+    Hacer un script en el que pregunte un nombre y para todos MENOS para los que se llamen Anto-
+    nio, les pregunte su año de nacimiento y imprima en pantalla su edad.
+    (Para los que se llamen Antonio les pedirá directamente su edad).
+    (En la respuesta el nombre debe aparecer todo en mayúsculas)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+
+    <script type="text/javascript">
+
+        let name = prompt("What's your name?");
+
+        let nameUpperCase = name.toUpperCase();
+
+        if (nameUpperCase != "ANTONIO") {
+
+            let yearOfBirth = prompt("What's your year of birt?");   
+            
+            document.write("Hi " + nameUpperCase + ", you were born in " + yearOfBirth + ".");
+
+        } else {
+
+            let age = prompt("How old are you?");
+
+            document.write("Hi " + nameUpperCase + ", your age is " + age + ".");
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
