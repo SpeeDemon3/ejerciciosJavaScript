@@ -1,0 +1,44 @@
+<!--
+    Hacer un Script en JavaScript que imprima por pantalla el tipo a que corresponde cada dato.
+    (Los tipos de datos a representar son: cadena de texto, Entero, Booleano, Float o array)
+    Ejemplo de lo que tiene que aparcer por pantalla: (El dato debe salir en negrita)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+
+    <script type="text/javascript">
+        // Variable de tipo String
+        const texto = "Hola Mundo";
+        // Utilizando el metodo typeof(variable) obtengo el tipo de dato al que pertenece la variable
+        document.write("La variable es de tipo -> <strong>" + texto + "</strong> " + typeof(texto) + "<br/>");
+
+        // Variable de tipo entero
+        const numero = 1987;
+        document.write("La variable es de tipo -> <strong>" + numero + " </strong>" + typeof(numero) + "<br/>");
+
+        // Variable de tipo boolean
+        let falso = false;
+        document.write("La variable es de tipo -> <strong>" + falso + " </strong>" + typeof(falso) + "<br/>");
+
+        // Variable de tipo float
+        let pi = 3.14;
+        document.write("La variable es de tipo -> <strong>" + pi + " </strong>" + typeof(pi) + "<br/>");
+
+        // Variable tipo array
+        let letras = new Array("a", "b", "c");
+        document.write("La variable es de tipo -> <strong>" + letras + " </strong>" + typeof(letras) + "<br/>");
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
