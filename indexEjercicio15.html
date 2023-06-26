@@ -1,0 +1,68 @@
+<!--
+    7. El calculo de la letra del Documento Nacional de Identidad (DNI) es un proceso matemático
+    Sencillo que se basa en obtener el resto de la división entera del numero de DNI y el numero 23.
+    A partir del resto de la división, se obtiene la letra seleccionándola dentro de un array de letras.
+    El array de letras es:
+    var letras = [‘T’, ‘R’, ‘W’, ‘A’, ‘G’, ‘M’, ‘Y’, ‘F’, ‘P’, ‘D’, ‘X’, ‘B’, ‘N’, ‘J’, ‘Z’, ‘S’, ‘Q’, ‘V’, ‘H’,
+    ‘L’, ‘C’, ‘K’, ‘E’, ‘T’];
+    Por tanto si el resto de la división es 0, la letra del DNI es la T y si el resto es 3 la letra es la A.
+    Con estos datos, elaborar un peque~no script que:
+    •
+    •
+    •
+    •
+    Almacene en una variable el numero de DNI indicado por el usuario y en otra variable la
+    letra del DNI que se ha indicado. (Pista: si se quiere pedir directamente al usuario que
+    indique su numero y su letra, se puede utilizar la función prompt())
+    En primer lugar (y en una sola instrucción) se debe comprobar si el numero es menor que
+    0 o mayor que 99999999. Si ese es el caso, se muestra un mensaje al usuario indicando
+    que el proporcionado no es valido y el programa no muestra mas mensajes.
+    Si el numero es valido, se calcula la letra que le corresponde según el método explicado
+    anteriormente.
+    Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no
+    coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es
+    correcta. En otro caso, se muestra un mensaje indicando que el numero y la letra de DNI
+    son correctos.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+
+    <script type="text/javascript">
+        // Array de caracteres para obtener la letra el DNI
+        const letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E", "T"];
+
+        // Numero de DNI introducido por el usuario
+        let numeroIntroducidoUsuario = prompt("Introduce un número valido entre 0 y 99999999, seguidamente.");
+
+        // Caracter del documento introducido por el usuario
+        let caracterDocumento = prompt("Introduce el caracter del documento.");
+        caracterDocumento = caracterDocumento.toUpperCase();
+
+        // Compruebo que el valor introducido este dentro del rango valido
+        if (numeroIntroducidoUsuario < 0 || numeroIntroducidoUsuario > 99999999) {
+            alert("Has introducido un número incorrecto.");
+        } else {
+            // Obtengo el modulo
+            let obtenerCaracter = numeroIntroducidoUsuario % 23;
+            // Compruebo si la letra introducida por el usuario es igual a la que le corresponderia
+            if (caracterDocumento == letras[obtenerCaracter]) {
+                alert("El número y caracter indicados son correctos.")
+            } else {
+                alert("El DNI introducido no es valido.")
+            }
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
