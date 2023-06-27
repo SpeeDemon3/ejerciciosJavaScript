@@ -1,0 +1,44 @@
+<!--
+    Realiza un script que contenga una función que el usuario el que determina el número de veces y 
+    el texto que se debe imprimir. Esta funcionalidad debe estar incluida en el BODY, y desde allí invocar a la función anterior.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+
+    <script>
+
+        function imprimir(numeroVeces, texto) {
+
+            indice = 0;
+            // Mientras numeroVeces sea mayor o igual a contador
+            while(indice < numeroVeces) {
+                document.write(texto + "<br/>");
+                indice++;
+            }
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+    <script>
+        
+            // Pido y guardo los datos al usuario
+            let textoUsuario = prompt("Introduce el texto deseado");
+            let numeroVecesImprimirUsuario = prompt("Indica el número de veces que deseas imprimir el texto");
+
+            // Invoco el metodo, pasando como parametro las variables que contienen los valores introducidos por el usuario
+            imprimir(numeroVecesImprimirUsuario, textoUsuario);
+
+    </script>
+
+</body>
+</html>
